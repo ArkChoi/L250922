@@ -21,8 +21,9 @@ int main()
 	cout << "1~100 의 3의 배수 합 : " << SumMultipleofThree << endl;*/
 
 	//2번 실습
-	int MaxValue = 5;
+	int MaxValue = 0;
 	int CountLoop = 0;
+	cin >> MaxValue;
 
 	for (int i=0;i<MaxValue;i++) 
 	{	
