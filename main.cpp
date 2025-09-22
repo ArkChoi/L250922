@@ -7,6 +7,7 @@ using namespace std;
 int Input();
 void Process(int KeyCode);
 void Render();
+bool Predict(int NewX, int NewY);
 
 //Globla Value
 int MaxSize = 10;
@@ -68,25 +69,25 @@ void Process(int KeyCode)
 	{
 	case 'w':
 		PlayerY--;
-		if (World[PlayerY][PlayerX] == 1) {
+		if (Predict) {
 			PlayerY++;
 		}
 		break;
 	case 's':
 		PlayerY++;
-		if (World[PlayerY][PlayerX] == 1) {
+		if (Predict) {
 			PlayerY--;
 		}
 		break;
 	case 'a':
 		PlayerX--;
-		if (World[PlayerY][PlayerX] == 1) {
+		if (Predict) {
 			PlayerX++;
 		}
 		break;
 	case 'd':
 		PlayerX++;
-		if (World[PlayerY][PlayerX] == 1) {
+		if (Predict) {
 			PlayerX--;
 		}
 		break;
@@ -122,4 +123,12 @@ void Render()
 		}
 		cout << "\n";
 	}
+}
+
+bool Predict(int NewX, int NewY) 
+{
+	if (World[NewX][NewY]==1) {
+		return true;
+	}
+	return false;
 }
