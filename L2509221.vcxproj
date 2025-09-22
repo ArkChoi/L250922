@@ -123,6 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Lowlowlowgame.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
