@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int Source() 
+int Source()
 {
 	//1번 실습
 	/*int Sum = 0;
@@ -117,5 +117,15 @@ int Source()
 	//		cout << "\n";
 	//	}
 	//}
+
+	//4번째 실습
+	//char Chars[6] = {'H','e','l','l','o','\0'};
+	/*char Chars[6] = "Hello";
+
+	cout << Chars << endl;
+
+	string String = "Hello";
+	cout << String << endl;*/
+
 	return 0;
 }
